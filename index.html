@@ -1,222 +1,238 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <title>Sanjidul Shahin | Portfolio</title>
     <link rel="stylesheet" href="stylesheet/styles.css" />
-
-    <style>
-      .logo {
-        font-size: 2.5rem;
-        color: var(--text-color);
-        font-weight: 600;
-        cursor: default;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- ===== HEADER ===== -->
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-
-      <box-icon name="menu" id="menu-icon"></box-icon>
-
+      <a href="#" class="logo">Sanjidul<span>.</span></a>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"
+        ><i class="fas fa-bars"></i
+      ></label>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#portfolio">Project</a>
+        <a href="#portfolio">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <!-- home section desing -->
-    <section class="home" id="home">
+    <!-- ===== HOME ===== -->
+    <section class="home" id="home" data-animate="fade-up">
       <div class="home-content">
-        <h3>Hello,It's Me</h3>
-        <h1>Sanjidul Alam Chowdhury</h1>
-        <h3>And I'm a <span>Full Stack Developer</span></h3>
-
+        <h1 data-animate="fade-up">
+          Hi, I'm <span>Sanjidul Alam Chowdhury</span>
+        </h1>
+        <h3 data-animate="fade-up">
+          Aspiring <span>Data Analyst & Data Scientist</span>
+        </h3>
+        <p data-animate="fade-up">
+          I turn data into insights by analyzing datasets, building dashboards,
+          and delivering actionable intelligence for real-world problems.
+        </p>
+        <a href="#portfolio" class="btn" data-animate="fade-up"
+          >Explore My Work</a
+        >
         <div class="social-media">
-          <a href="https://www.facebook.com/sanjidul.shahin" target="_blank"
-            ><i class="bx bxl-facebook-square"></i
-          ></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/sanjidul.shahin" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/your_instagram_username"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sanjidulalamchowdhury/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about" data-animate="fade-up">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-content">
+        <p>
+          I’m a final-year Computer Science student focusing on Data Analytics
+          and Data Science. I work on data cleaning, analysis, visualization,
+          and dashboard development using Python, SQL, Excel, Tableau, and Power
+          BI.
+        </p>
         <a
-          href="https://drive.google.com/file/d/1Bf1-ndK5arn_VB2qLf6EKOV7hAR0-Rmq/view?usp=sharing"
-          class="btn"
+          href="https://github.com/sanjidulshahin?tab=repositories"
           target="_blank"
-          >Download CV</a
+          class="btn"
+          >Visit My GitHub</a
         >
       </div>
-      <div class="home-img">
-        <img src="Images/home.jpg" alt="" />
-      </div>
     </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="Images/home.jpg" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Full Stack Developer</h3>
-        <br />
-        <p>
-          Undergraduate CSE student at IUB, proficient in HTML, CSS, JS, PHP,
-          MySQL, Python, C++, and Pygame. Passionate about chess, avid reader,
-          and enthusiastic traveler. Actively engaged in coding competitions and
-          the local chess community. Committed to continuous learning and making
-          a positive impact through technology.
-        </p>
-        <br />
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-
-    <!-- services section design -->
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services" data-animate="fade-up">
+      <h2 class="heading">My <span>Services</span></h2>
       <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <br />
-          <p>I have developed severals website.<br /></p>
-          <br />
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-game"></i>
-          <h3>Game Development</h3>
-          <br />
+        <div class="service-box">
+          <i class="fas fa-database"></i>
+          <h3>Data Cleaning & Wrangling</h3>
           <p>
-            Worked on game development projects
-            <br />
+            Prepare and transform raw datasets using Python, Pandas, NumPy, and
+            Excel.
           </p>
-          <br />
-          <a href="#" class="btn">Read More</a>
         </div>
-
-        <div class="services-box">
-          <i class="bx bx-bar-chart"></i>
-          <h3>Graphic Designing</h3>
-          <br />
-          <p>Worked as a graphic designer<br /></p>
-          <br />
-          <a href="#" class="btn">Read More</a>
+        <div class="service-box">
+          <i class="fas fa-chart-line"></i>
+          <h3>Data Visualization</h3>
+          <p>
+            Create dashboards and visualizations in Tableau, Power BI, and
+            Excel.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fas fa-project-diagram"></i>
+          <h3>Data Analysis & Insights</h3>
+          <p>
+            Analyze trends, generate reports, and provide actionable insights
+            for business decisions.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- portfolio section design -->
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
+    <!-- ===== PORTFOLIO ===== -->
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio" data-animate="fade-up">
+      <h2 class="heading">Latest <span>Projects</span></h2>
       <div class="portfolio-container">
+        <!-- Project 1 -->
         <div class="portfolio-box">
-          <img src="Images/portfolio1.jpg" alt="" />
+          <img
+            src="Images/data-wrangling.png"
+            alt="Data Wrangling Automobile"
+          />
           <div class="portfolio-layer">
-            <!-- Using inline styling -->
-            <h4 style="color: rgb(6, 22, 7)">Tic Tac Toe</h4>
-
+            <h4>Data Wrangling (Automobile)</h4>
+            <p>
+              Cleaned & transformed dataset using Python, Pandas, NumPy, and
+              Matplotlib.
+            </p>
             <a
-              href="https://sanjidulshahin.github.io/ROCK_PAPER_SCISSORS/"
+              href="https://github.com/sanjidulshahin/data-wrangling-automobile-dataset"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="portfolio-box">
-          <img src="Images/portfolio2.jpg" alt="" />
+          <img src="Images/pizza-sales.png" alt="Pizza Sales Analysis" />
           <div class="portfolio-layer">
-            <!-- Using inline styling -->
-            <h4 style="color: rgb(6, 22, 7)">To Do App</h4>
-
+            <h4>Pizza Sales Analysis</h4>
+            <p>
+              SQL + Excel project identifying sales trends and key revenue
+              drivers.
+            </p>
             <a
-              href=" https://sanjidulshahin.github.io/TO-DO-APP/"
+              href="https://github.com/sanjidulshahin/Pizza-Sales-Data-Analysis-Project-sql-Excel"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="portfolio-box">
-          <img src="Images/portfolio3.jpg" alt="" />
+          <img src="Images/bike-sales.png" alt="Bike Sales Dashboard" />
           <div class="portfolio-layer">
-            <!-- Using inline styling -->
-            <h4 style="color: rgb(6, 22, 7)">Web Design</h4>
-
+            <h4>Bike Sales Dashboard</h4>
+            <p>
+              Analyzed customer demographics & regional trends with SQL, Excel &
+              Tableau.
+            </p>
             <a
-              href="https://2120394-wasteless-ass-01.netlify.app/"
+              href="https://github.com/sanjidulshahin/Bike-Sales-Data-analytics-project-using-SQL-EXCEL-TABLEU"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-box">
+          <img src="Images/hr-analysis.png" alt="HR Data Analysis" />
+          <div class="portfolio-layer">
+            <h4>HR Data Analysis</h4>
+            <p>
+              Employee analytics dashboard showing attrition trends &
+              performance metrics.
+            </p>
+            <a
+              href="https://github.com/sanjidulshahin/HR-Data-Analysis"
+              target="_blank"
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- contact section design -->
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#contact">
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact" data-animate="fade-up">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form
+        action="mailto:sanjidulshahin@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
         <div class="input-box">
-          <input type="text" placeholder="Full Name" id="name" required />
-          <input type="email" id="email" placeholder="Email Address" required />
-        </div>
-        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
           <input
-            type="number"
-            id="phone"
-            placeholder="Mobile Number"
-            required
-          />
-          <input
-            type="text"
-            placeholder="Email Subject"
-            id="subject"
+            type="email"
+            name="email"
+            placeholder="Email Address"
             required
           />
         </div>
         <textarea
-          id="message"
-          cols="30"
-          rows="10"
+          name="message"
+          rows="6"
           placeholder="Your Message"
           required
         ></textarea>
-        <button type="submit" class="btn">Send Message</button>
-        <!-- <input type="submit" class="btn" id="submit" /> -->
+        <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
 
-    <!-- footer design -->
-    <footer class="footer">
+    <!-- ===== FOOTER ===== -->
+    <footer>
       <div class="footer-text">
-        <p>
-          Copyright @copy: 2024 by Sanjidul Alam Chowdhury | All Rights Reserved
-        </p>
+        <p>© 2025 Sanjidul Shahin | Built with 💻 & Passion</p>
       </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      <div class="footer-icon">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
       </div>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    <!-- ===== SCRIPTS ===== -->
     <script src="Scripts/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
-

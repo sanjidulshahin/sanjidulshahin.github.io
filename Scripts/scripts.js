@@ -32,3 +32,18 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   sendEmail();
 });
+// Scroll reveal on scroll
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll("[data-animate]").forEach((el) => {
+  observer.observe(el);
+});
